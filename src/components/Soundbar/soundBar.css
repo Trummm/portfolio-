@@ -1,0 +1,82 @@
+.Soundbar {
+  display: flex;
+  position: fixed;
+  z-index: 99;
+  left: 4rem;
+  top: 2.8rem;
+  align-items: center;
+  background-color: transparent;
+}
+
+.title {
+  font-family: "Pacifico";
+  background-color: transparent;
+  user-select: none;
+}
+
+.Soundbar_circle {
+  position: relative;
+  width: 34px;
+  height: 40px;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: transparent;
+  float: right;
+  margin: 0 10px;
+}
+
+.title_icon {
+  margin: 0 10px;
+  font-size: 34px !important;
+  position: absolute;
+  cursor: pointer;
+  top: 6px;
+  background-color: transparent;
+}
+
+.Soundbar :nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.Soundbar :nth-child(2) {
+  animation-delay: 0.3s;
+}
+
+.Soundbar :nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.Soundbar :nth-child(4) {
+  animation-delay: 0.5s;
+}
+
+.Soundbar :nth-child(5) {
+  animation-delay: 0.8s;
+}
+
+.Soundbar__line {
+  position: relative;
+  top: 3px;
+  left: 10px;
+  background: rgb(0, 0, 0);
+  height: 1.4rem;
+  width: 1px;
+  border: 1px solid black;
+  margin: 0 2px;
+  animation: play 1s ease infinite;
+}
+
+@keyframes play {
+  0% {
+    transform: scaleY(1);
+  }
+  50% {
+    transform: scaleY(2);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}

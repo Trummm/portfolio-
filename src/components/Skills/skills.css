@@ -1,0 +1,113 @@
+.card {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  user-select: none;
+}
+
+.card__item-dash {
+  position: relative;
+  width: 500px;
+  height: 600px;
+  border: 2px dashed #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  z-index: 99;
+}
+
+.card__item {
+  position: absolute;
+  background-color: #fff;
+  width: 500px;
+  height: 600px;
+  cursor: pointer;
+  border: 2px solid #000;
+  transition: all ease 0.5s;
+  z-index: 9;
+}
+
+.card__item-icon {
+  background-color: transparent;
+  position: absolute;
+  bottom: 7rem;
+  right: 3rem;
+}
+
+.card__item-h1 {
+  background-color: transparent;
+  position: absolute;
+  bottom: 3rem;
+  right: 3rem;
+}
+
+.card__item2 {
+  position: absolute;
+  background-color: #fff;
+  width: 500px;
+  height: 600px;
+  cursor: pointer;
+  transition: all ease-in 0.25s;
+  border: 2px solid #000;
+  display: none;
+}
+
+.card__item2-h3,
+.card__item2-list,
+.card__item2-list-item {
+  background-color: transparent;
+  margin-left: 14px;
+  font-family: "Ubuntu Mono", monospace;
+}
+
+.card__item2-h3 {
+  font-size: 2rem;
+  margin-top: 4rem;
+}
+
+.card__item2-list {
+  font-weight: 600;
+  margin-top: 3.4rem;
+  font-size: 1.8rem;
+}
+
+.card__item2-list-item {
+  margin: 16px 2rem;
+  font-size: 1.6rem !important;
+  font-weight: 100 !important;
+}
+
+.card__item-dash:hover .card__item {
+  transform: translate(-10%, -10%);
+  border: 2px solid #5bc0eb;
+  display: none;
+}
+
+.card__item-dash:hover .card__item2 {
+  transform: translate(-10%, -10%);
+  border: 2px solid #5bc0eb;
+  display: block;
+}
+
+.back-skills {
+  position: absolute;
+  top: 2.8rem;
+  right: 3rem;
+  font-family: "Pacifico", cursive;
+  font-size: 1.6rem;
+  color: #000;
+}
+
+.Skills-h1 {
+  position: absolute;
+  background-color: transparent;
+  color: rgba(0, 0, 0, 0.1);
+  bottom: 5rem;
+  right: 3rem;
+  font-size: 10rem;
+  user-select: none;
+}

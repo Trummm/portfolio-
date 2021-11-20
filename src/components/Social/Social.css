@@ -1,0 +1,25 @@
+.Social {
+  position: fixed;
+  bottom: 0;
+  left: 3.4rem;
+  z-index: 99;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.social_icon {
+  width: 1.6rem;
+  margin: 6px 0;
+  cursor: pointer;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.line {
+  background-color: rgb(0, 0, 0);
+  width: 2px;
+  height: 8rem;
+}

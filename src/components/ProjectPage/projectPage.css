@@ -1,0 +1,143 @@
+.projectPage {
+  height: 300vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+  overflow-x: hidden;
+}
+
+.slide {
+  position: fixed;
+  left: 30rem;
+  top: 14rem;
+  height: 50vh;
+  background-color: transparent;
+  display: flex;
+  user-select: none;
+  z-index: 99;
+}
+
+.slide::-webkit-scrollbar {
+  display: none;
+}
+
+.slide_item {
+  position: relative;
+  min-width: 16rem;
+  height: 40vh;
+  margin-right: 6rem;
+  list-style: none;
+  background-color: #fcf6f4;
+  border-radius: 0px 50px;
+  padding: 1.5rem 2rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.tag {
+  display: flex;
+  background-color: transparent;
+}
+
+.tag_item {
+  margin-right: 10px;
+  color: #666363;
+}
+
+.project__link {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 0px 0px 0px 40px;
+  height: 45px;
+  cursor: pointer;
+  font-size: 1.6rem;
+}
+
+.btn {
+  background-color: transparent;
+  text-decoration: none;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  border: none;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+.slide_item-title,
+.slide_item-title2,
+.tag_item {
+  background-color: transparent;
+  font-family: Karla, sans-serif;
+}
+
+.slide_item-title2 {
+  position: relative;
+  line-height: 1.6rem;
+  min-height: 100px;
+}
+
+.slide_item-title2::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 8rem;
+  height: 2px;
+  background-color: #000;
+  bottom: 0;
+}
+
+.slide_item-title2:hover::after {
+  background-color: #fff;
+}
+
+.slide_item:hover {
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.slide_item:hover .project__link {
+  background-color: #fff;
+}
+
+.slide_item:hover .btn {
+  color: #000;
+}
+
+.slide_item:hover .slide_item-title2::after {
+  background-color: #fff;
+}
+
+.slide_item:hover .tag_item {
+  color: #fff;
+}
+
+.projectPage_title {
+  position: fixed;
+  top: 36rem;
+  font-size: 10rem;
+  left: 12rem;
+  background-color: transparent;
+  color: #1a1919;
+  user-select: none;
+}
+
+.projectPage_title2 {
+  position: fixed;
+  top: 2.8rem;
+  right: 3rem;
+  font-family: "Pacifico", cursive;
+  font-size: 1.6rem;
+  background-color: transparent;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  user-select: none;
+  cursor: pointer;
+}

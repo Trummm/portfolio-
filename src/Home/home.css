@@ -1,0 +1,111 @@
+.Home {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+.loading__icon {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+.work {
+  position: absolute;
+  font-family: Karla, sans-serif;
+  top: 50%;
+  left: 4rem;
+  transform: translate(-50%, -50%) rotate(-90deg);
+  text-decoration: none;
+  cursor: pointer;
+  z-index: 9;
+  background-color: transparent;
+}
+
+.skills {
+  position: absolute;
+  font-family: Karla, sans-serif;
+  top: 50%;
+  right: 4rem;
+  text-decoration: none;
+  transform: rotate(90deg) translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.Fe {
+  position: absolute;
+  font-family: Karla, sans-serif;
+  top: 3.4rem;
+  right: 4rem;
+  cursor: pointer;
+}
+
+.work_item,
+.skills_item,
+.about,
+.Contact,
+.fe_item {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  z-index: 9;
+  background-color: transparent;
+  user-select: none;
+}
+
+.bottom {
+  font-family: Karla, sans-serif;
+  display: flex;
+  position: absolute;
+  justify-content: space-evenly;
+  width: 100%;
+  bottom: 2rem;
+  cursor: pointer;
+}
+
+.center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  transition: all 1s ease 0s;
+  user-select: none;
+}
+
+.center span {
+  z-index: 22;
+  text-decoration: none;
+  margin-top: 10px;
+  user-select: none;
+}
+
+.center_item {
+  width: 200px;
+  height: 200px;
+  animation: 1.5s linear 0s infinite circle;
+}
+
+.darkDiv {
+  position: absolute;
+  top: 0;
+  background-color: #000;
+  bottom: 0;
+  right: 50%;
+  z-index: 1;
+}
+
+@keyframes circle {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

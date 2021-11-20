@@ -1,0 +1,112 @@
+.About {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../../assets/image/space.jpg");
+  background-size: cover;
+  overflow: hidden;
+}
+
+.rectangle-about {
+  position: absolute;
+  width: 50vw;
+  height: 60vh;
+  border: 2px solid #fff;
+  background-color: transparent;
+  left: 11.6rem;
+  top: 11rem;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  user-select: none;
+  z-index: 99;
+}
+
+.rectangle_title {
+  background-color: transparent;
+  color: #fff;
+  font-family: "Ubuntu Mono", monospace;
+  font-size: 2rem;
+  margin: 2rem 0;
+  line-height: 3rem;
+}
+
+.about-text {
+  position: absolute;
+  background-color: transparent;
+  color: rgba(252, 246, 244, 0.1);
+  font-size: 10rem;
+  top: 4rem;
+  user-select: none;
+}
+
+.natilus {
+  position: absolute;
+  background-color: transparent;
+  right: 8rem;
+  top: 14rem;
+  animation: space ease 4s infinite;
+  user-select: none;
+}
+
+.image_item {
+  background-color: transparent;
+  width: 36rem;
+  left: -100px;
+}
+
+.small-image {
+  position: absolute;
+  background-color: transparent;
+  bottom: 5rem;
+  animation: fly ease 12s infinite;
+  user-select: none;
+}
+.image-item2 {
+  background-color: transparent;
+  width: 10rem;
+}
+
+.back {
+  position: absolute;
+  top: 2.8rem;
+  right: 3rem;
+  font-family: "Pacifico", cursive;
+  font-size: 1.6rem;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  user-select: none;
+}
+
+@keyframes space {
+  0% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(25px) translateX(25px);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes fly {
+  0% {
+    left: -100px;
+    bottom: 85px;
+  }
+  25% {
+    bottom: 130px;
+  }
+  50% {
+    bottom: 110px;
+  }
+  75% {
+    bottom: 85px;
+  }
+  100% {
+    left: 100%;
+    bottom: 82px;
+  }
+}

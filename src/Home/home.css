@@ -92,7 +92,7 @@
   animation: 1.5s linear 0s infinite circle;
 }
 
-.darkDiv {
+.dark_div {
   position: absolute;
   top: 0;
   background-color: #000;
